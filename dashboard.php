@@ -1,0 +1,1 @@
+<!-- Página restrita que só pode ser acessada por usuários logados. Exibe uma mensagem de boas-vindas e o email do usuário. -->

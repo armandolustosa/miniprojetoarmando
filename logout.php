@@ -1,0 +1,1 @@
+<!-- Script para finalizar a sessão do usuário, efetivando o logout e redirecionando-o para a página de login. -->
