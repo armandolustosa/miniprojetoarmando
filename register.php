@@ -6,24 +6,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="imagens/Novo-LOGO-01.ico">
+  <link rel="stylesheet" href="css/login.css">
   <title>Cadastro</title>
 </head>
 
 <body>
-  <h2>Cadastro do Usuário</h2>
-  <form action="" method="post">
-    <p>
-      <label for="idemail">Email:</label>
-      <input type="text" name="email" id="idemail" required>
-    </p>
-    <p>
-      <label for="idsenha">Senha:</label>
-      <input type="text" name="senha" id="idsenha" required>
-    </p>
-    <button type="submit">Cadastrar</button>
-  </form>
+  <main>
+    <section class="parte1">
+      <img src="imagens/Novo-LOGO-01.webp" alt="logo da Apple" width="80px">
+      <h1>Cadastro do Usuário</h1>
+      <article class="texto">
+        <p>Cadastre-se em nossa página preenchendo os campos abaixo com atenção.</p>
+      </article>
+    </section>
+    <section class="parte2">
+      <form action="" method="POST">
+        <p>
+          <label for="idmail">Email:</label>
+          <br>
+          <input type="email" name="email" id="idmail" placeholder="Entre com o seu Email" required>
+        </p>
+        <p>
+          <label for="idsenha">Senha:</label>
+          <br>
+          <input type="text" name="senha" id="idsenha" placeholder="Entre com a sua Senha" required>
+        </p>
+        <p>
+          <input type="submit" value="Cadastrar" class="enviar">
+        </p>
+      </form>
+    </section>
+    <br>
 
-  <?php
+    <?php
   //  Página de Cadastro
 
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -41,9 +57,14 @@
     // O `FILE_APPEND` verifica se o arquivo informado existe, caso não exista o arquivo é criado. Do contrário, o arquivo existente é sobrescrito normalmente
     file_put_contents('users.txt', $userData, FILE_APPEND);
 
-    echo "<p>Cadastro Realizado com Sucesso!</p>";
+    echo "<p>Cadastro Realizado com Sucesso! Agora, realize o Login <a href='login.php'>aqui</a>.</p>";
   }
   ?>
+
+  </main>
+  <footer>
+    <p>&copy Criado por <a href="https://github.com/armandolustosa" target="_blank">Armando</a></p>
+  </footer>
 </body>
 
 </html>
