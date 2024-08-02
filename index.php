@@ -11,7 +11,7 @@
 <body>
   <main>
     <section>
-      <img src="imagens/Novo-LOGO-01.webp" alt="logo da Apple" width="80px">
+      <img src="imagens/Novo-LOGO-01.webp" alt="Logo da Amigos do Bem" width="80px">
       <h1>Bem-vindo ao Nosso Sistema</h1>
       <article class="texto">
         <p>Explore, gerencie e aproveito todas as funcionalidades do nosso sistema com facilidade. Faça Login para entrar ou Registre-se para criar uma conta.</p>
