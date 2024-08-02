@@ -17,16 +17,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/dashboard.css">
   <title>Dashboard</title>
+  <style>
+
+  </style>
 </head>
 
 <body>
-  <h2>Bem-vindo ao Sitema</h2>
-  <p>Você está logado como
-    <!-- Devo chamar o E-mail cadastrado pelo usuário para que ele seja exibido como conteúdo pelo HTML, por isso uso a função htmlspecialchars() -->
-    <?php echo htmlspecialchars($_SESSION['email']); ?>
-  </p>
-  <a href="logout.php">Logout</a>
+
+  <header>
+    <a href="index.php"><img src="imagens/LOGO-BRANCO-ADB.png" alt="logo da Apple" width="80px"></a>
+    <nav>
+      <a href="">Usuário</a> |
+      <a href="">Relatórios</a> |
+      <a href="">Contatos</a>
+    </nav>
+
+    <article><a href="logout.php">Logout</a></article>
+  </header>
+
+  <main>
+    <section>
+      <h1>Bem-vindo ao Painel do Sistema</h1>
+      <p>Olá,
+        <!-- Devo chamar o E-mail cadastrado pelo usuário para que ele seja exibido como conteúdo pelo HTML, por isso uso a função htmlspecialchars() -->
+        <?php echo "<strong>" . htmlspecialchars($_SESSION['email']) . "</strong>"; ?>!
+        Este é o seu painel de controle onde você pode gerenciar suas informações e acessar diferentes funcionalidades.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="texto-footer">&copy Criado por <a href="https://github.com/armandolustosa" target="_blank">Armando</a></p>
+  </footer>
 </body>
 
 </html>

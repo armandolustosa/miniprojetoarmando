@@ -7,14 +7,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="imagens/Novo-LOGO-01.ico">
-  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/login-register-error.css">
   <title>Login</title>
 </head>
 
 <body>
   <main>
     <section class="parte1">
-      <img src="imagens/Novo-LOGO-01.webp" alt="logo da Apple" width="80px">
+      <a href="index.php"><img src="imagens/Novo-LOGO-01.webp" alt="logo da Apple" width="80px"></a>
       <h1>Faça o Login</h1>
       <article class="texto">
         <p>Preencha os dados com atenção para que o seu login seja efetivado.</p>
@@ -30,15 +30,15 @@
         <p>
           <label for="idsenha">Senha:</label>
           <br>
-          <input type="text" name="senha" id="idsenha" placeholder="Entre com a sua Senha" required>
+          <input type="password" name="senha" id="idsenha" placeholder="Entre com a sua Senha" required>
         </p>
         <p>
           <input type="submit" value="Entrar" class="enviar">
         </p>
       </form>
+      <p class="texto-referencia">Ainda não possui um Cadastro? Realize-o <a href="register.php">aqui</a>.</p>
     </section>
     <br>
-    <p>Ainda não possui um Cadastro? Realize-o <a href="register.php">aqui</a>.</p>
 
     <?php 
     // Ao iniciar a sessão, devemos gerenciar o estado de login do usuário para captar as suas informações, para disponibilizá-las na próxima sessão. Para isso, utilizamos a função session_start()

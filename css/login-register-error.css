@@ -14,7 +14,7 @@ body {
 h1 {
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0px;
   text-align: center;
 }
 
@@ -33,11 +33,6 @@ main {
 }
 
 article.texto {
-  margin-bottom: 20px;
-}
-
-main > section.parte1 > img {
-  border-radius: 100%;
   margin-bottom: 20px;
 }
 
@@ -60,14 +55,17 @@ input {
   margin-bottom: 20px;
   font-family: "Open Sans", sans-serif;
   color: #fff;
-  background-color: #ce771a;
+  background-color: transparent;
   border: none;
   border-bottom: 2px solid #fff;
 }
 
-input::placeholder,
-textarea::placeholder {
+input::placeholder {
   color: #ffffffb2;
+}
+
+input:default{
+  background-color: transparent;
 }
 
 input.enviar {
@@ -82,6 +80,29 @@ input.enviar {
   transition-duration: 0.5s;
 }
 
+.texto-erro {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin: 10px;
+}
+
+.texto-referencia {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+.texto-referencia > a {
+  color: #fff;
+  transition-duration: 0.5s;
+}
+
+.texto-referencia > a:hover {
+  color: #ffffff81;
+}
+
 input.enviar:hover {
   background-color: #fff;
   color: #2e489a;
@@ -93,11 +114,11 @@ main > p > a {
 }
 
 main > p > a:hover {
-  color: #ce771a;
+  color: #0000007e;
 }
 
 footer {
-  background-color: #ce771a;
+  background-color: #201304 ;
   color: #fff;
   font-weight: 600;
   text-align: center;
@@ -111,5 +132,5 @@ footer > p > a {
 }
 
 footer > p > a:hover {
-  color: #2e489a;
+  color: #ffffff81;
 }

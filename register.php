@@ -7,14 +7,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="imagens/Novo-LOGO-01.ico">
-  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/login-register-error.css">
   <title>Cadastro</title>
 </head>
 
 <body>
   <main>
     <section class="parte1">
-      <img src="imagens/Novo-LOGO-01.webp" alt="logo da Apple" width="80px">
+      <a href="index.php"><img src="imagens/Novo-LOGO-01.webp" alt="logo da Apple" width="80px"></a>
       <h1>Cadastro do Usuário</h1>
       <article class="texto">
         <p>Cadastre-se em nossa página preenchendo os campos abaixo com atenção.</p>
@@ -30,12 +30,13 @@
         <p>
           <label for="idsenha">Senha:</label>
           <br>
-          <input type="text" name="senha" id="idsenha" placeholder="Entre com a sua Senha" required>
+          <input type="password" name="senha" id="idsenha" placeholder="Entre com a sua Senha" required>
         </p>
         <p>
           <input type="submit" value="Cadastrar" class="enviar">
         </p>
       </form>
+      <p class="texto-referencia">Já possui um Cadastro? Realize o Login <a href="login.php">aqui</a>.</p>
     </section>
     <br>
 
